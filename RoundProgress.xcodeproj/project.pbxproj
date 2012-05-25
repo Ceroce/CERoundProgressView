@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E230F6C1156F9B1D00D2B84B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230F6C0156F9B1D00D2B84B /* UIKit.framework */; };
+		E230F6C3156F9B1D00D2B84B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230F6C2156F9B1D00D2B84B /* Foundation.framework */; };
+		E230F6C5156F9B1D00D2B84B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230F6C4156F9B1D00D2B84B /* CoreGraphics.framework */; };
+		E230F6CB156F9B1D00D2B84B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E230F6C9156F9B1D00D2B84B /* InfoPlist.strings */; };
+		E230F6CD156F9B1D00D2B84B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6CC156F9B1D00D2B84B /* main.m */; };
+		E230F6D1156F9B1D00D2B84B /* CEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */; };
+		E230F6D4156F9B1D00D2B84B /* CEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6D3156F9B1D00D2B84B /* CEViewController.m */; };
+		E230F6D7156F9B1D00D2B84B /* CEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E230F6D5156F9B1D00D2B84B /* CEViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E230F6BC156F9B1D00D2B84B /* RoundProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E230F6C0156F9B1D00D2B84B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E230F6C2156F9B1D00D2B84B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E230F6C4156F9B1D00D2B84B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E230F6C8156F9B1D00D2B84B /* RoundProgress-Info.plist */ = {isa = PBXFileReference; path = "RoundProgress-Info.plist"; sourceTree = "<group>"; };
+		E230F6CA156F9B1D00D2B84B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E230F6CC156F9B1D00D2B84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E230F6CE156F9B1D00D2B84B /* RoundProgress-Prefix.pch */ = {isa = PBXFileReference; path = "RoundProgress-Prefix.pch"; sourceTree = "<group>"; };
+		E230F6CF156F9B1D00D2B84B /* CEAppDelegate.h */ = {isa = PBXFileReference; path = CEAppDelegate.h; sourceTree = "<group>"; };
+		E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEAppDelegate.m; sourceTree = "<group>"; };
+		E230F6D2156F9B1D00D2B84B /* CEViewController.h */ = {isa = PBXFileReference; path = CEViewController.h; sourceTree = "<group>"; };
+		E230F6D3156F9B1D00D2B84B /* CEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEViewController.m; sourceTree = "<group>"; };
+		E230F6D6156F9B1D00D2B84B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E230F6B9156F9B1D00D2B84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E230F6C1156F9B1D00D2B84B /* UIKit.framework in Frameworks */,
+				E230F6C3156F9B1D00D2B84B /* Foundation.framework in Frameworks */,
+				E230F6C5156F9B1D00D2B84B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E230F6B1156F9B1C00D2B84B = {
+			isa = PBXGroup;
+			children = (
+				E230F6C6156F9B1D00D2B84B /* RoundProgress */,
+				E230F6BF156F9B1D00D2B84B /* Frameworks */,
+				E230F6BD156F9B1D00D2B84B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E230F6BD156F9B1D00D2B84B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E230F6BC156F9B1D00D2B84B /* RoundProgress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E230F6BF156F9B1D00D2B84B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E230F6C0156F9B1D00D2B84B /* UIKit.framework */,
+				E230F6C2156F9B1D00D2B84B /* Foundation.framework */,
+				E230F6C4156F9B1D00D2B84B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E230F6C6156F9B1D00D2B84B /* RoundProgress */ = {
+			isa = PBXGroup;
+			children = (
+				E230F6CF156F9B1D00D2B84B /* CEAppDelegate.h */,
+				E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */,
+				E230F6D2156F9B1D00D2B84B /* CEViewController.h */,
+				E230F6D3156F9B1D00D2B84B /* CEViewController.m */,
+				E230F6D5156F9B1D00D2B84B /* CEViewController.xib */,
+				E230F6C7156F9B1D00D2B84B /* Supporting Files */,
+			);
+			path = RoundProgress;
+			sourceTree = "<group>";
+		};
+		E230F6C7156F9B1D00D2B84B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E230F6C8156F9B1D00D2B84B /* RoundProgress-Info.plist */,
+				E230F6C9156F9B1D00D2B84B /* InfoPlist.strings */,
+				E230F6CC156F9B1D00D2B84B /* main.m */,
+				E230F6CE156F9B1D00D2B84B /* RoundProgress-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E230F6BB156F9B1D00D2B84B /* RoundProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E230F6DA156F9B1D00D2B84B /* Build configuration list for PBXNativeTarget "RoundProgress" */;
+			buildPhases = (
+				E230F6B8156F9B1D00D2B84B /* Sources */,
+				E230F6B9156F9B1D00D2B84B /* Frameworks */,
+				E230F6BA156F9B1D00D2B84B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundProgress;
+			productName = RoundProgress;
+			productReference = E230F6BC156F9B1D00D2B84B /* RoundProgress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E230F6B3156F9B1C00D2B84B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CE;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Céroce";
+			};
+			buildConfigurationList = E230F6B6156F9B1C00D2B84B /* Build configuration list for PBXProject "RoundProgress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E230F6B1156F9B1C00D2B84B;
+			productRefGroup = E230F6BD156F9B1D00D2B84B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E230F6BB156F9B1D00D2B84B /* RoundProgress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E230F6BA156F9B1D00D2B84B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E230F6CB156F9B1D00D2B84B /* InfoPlist.strings in Resources */,
+				E230F6D7156F9B1D00D2B84B /* CEViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E230F6B8156F9B1D00D2B84B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E230F6CD156F9B1D00D2B84B /* main.m in Sources */,
+				E230F6D1156F9B1D00D2B84B /* CEAppDelegate.m in Sources */,
+				E230F6D4156F9B1D00D2B84B /* CEViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E230F6C9156F9B1D00D2B84B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E230F6CA156F9B1D00D2B84B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E230F6D5156F9B1D00D2B84B /* CEViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E230F6D6156F9B1D00D2B84B /* en */,
+			);
+			name = CEViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E230F6D8156F9B1D00D2B84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E230F6D9156F9B1D00D2B84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E230F6DB156F9B1D00D2B84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoundProgress/RoundProgress-Prefix.pch";
+				INFOPLIST_FILE = "RoundProgress/RoundProgress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E230F6DC156F9B1D00D2B84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoundProgress/RoundProgress-Prefix.pch";
+				INFOPLIST_FILE = "RoundProgress/RoundProgress-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E230F6B6156F9B1C00D2B84B /* Build configuration list for PBXProject "RoundProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E230F6D8156F9B1D00D2B84B /* Debug */,
+				E230F6D9156F9B1D00D2B84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E230F6DA156F9B1D00D2B84B /* Build configuration list for PBXNativeTarget "RoundProgress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E230F6DB156F9B1D00D2B84B /* Debug */,
+				E230F6DC156F9B1D00D2B84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E230F6B3156F9B1C00D2B84B /* Project object */;
+}
