@@ -31,8 +31,13 @@
     self.player = [[[CEPlayer alloc] init] autorelease];
     self.player.delegate = self;
     
-    self.progressView.startAngle = (3.0*M_PI)/2.0;
+    UIColor *tintColor = [UIColor orangeColor];
+    [[UISlider appearance] setMinimumTrackTintColor:tintColor];
+    [[CERoundProgressView appearance] setTintColor:tintColor];
+    
     self.progressView.trackColor = [UIColor colorWithWhite:0.80 alpha:1.0];
+    
+    self.progressView.startAngle = (3.0*M_PI)/2.0;
 }
 
 - (void)viewDidUnload
@@ -75,7 +80,6 @@
         sender.selected = YES;
         [self.player play];
     }
-        
 }
 
 
