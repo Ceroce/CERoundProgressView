@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CERoundProgressView.h"
+#import "CEPlayer.h"
 
-@interface CEViewController : UIViewController
+@interface CEViewController : UIViewController <CEPlayerDelegate>
+
+
+@property (retain, nonatomic) IBOutlet CERoundProgressView *progressView;
+@property (retain, nonatomic) IBOutlet UISlider *progressSlider;
+- (IBAction)progressSlider:(UISlider *)sender;
+- (IBAction)playPauseButton:(UIButton *)sender;
+@property (retain, nonatomic) IBOutlet UIButton *playPauseButton;
+
+@property (retain, nonatomic) CEPlayer *player;
 
 @end

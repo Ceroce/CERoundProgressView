@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2263E10157CF7FA00558AD8 /* Pause.png in Resources */ = {isa = PBXBuildFile; fileRef = E2263E0C157CF7FA00558AD8 /* Pause.png */; };
+		E2263E11157CF7FA00558AD8 /* Pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2263E0D157CF7FA00558AD8 /* Pause@2x.png */; };
+		E2263E12157CF7FA00558AD8 /* Play.png in Resources */ = {isa = PBXBuildFile; fileRef = E2263E0E157CF7FA00558AD8 /* Play.png */; };
+		E2263E13157CF7FA00558AD8 /* Play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2263E0F157CF7FA00558AD8 /* Play@2x.png */; };
+		E2263E17157CFC9300558AD8 /* CEPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2263E16157CFC9300558AD8 /* CEPlayer.m */; };
 		E230F6C1156F9B1D00D2B84B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230F6C0156F9B1D00D2B84B /* UIKit.framework */; };
 		E230F6C3156F9B1D00D2B84B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230F6C2156F9B1D00D2B84B /* Foundation.framework */; };
 		E230F6C5156F9B1D00D2B84B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E230F6C4156F9B1D00D2B84B /* CoreGraphics.framework */; };
@@ -15,22 +20,31 @@
 		E230F6D1156F9B1D00D2B84B /* CEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */; };
 		E230F6D4156F9B1D00D2B84B /* CEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6D3156F9B1D00D2B84B /* CEViewController.m */; };
 		E230F6D7156F9B1D00D2B84B /* CEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E230F6D5156F9B1D00D2B84B /* CEViewController.xib */; };
+		E230F6DF156F9B4300D2B84B /* CERoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6DE156F9B4300D2B84B /* CERoundProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E2263E0C157CF7FA00558AD8 /* Pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pause.png; sourceTree = "<group>"; };
+		E2263E0D157CF7FA00558AD8 /* Pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pause@2x.png"; sourceTree = "<group>"; };
+		E2263E0E157CF7FA00558AD8 /* Play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Play.png; sourceTree = "<group>"; };
+		E2263E0F157CF7FA00558AD8 /* Play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Play@2x.png"; sourceTree = "<group>"; };
+		E2263E15157CFC9300558AD8 /* CEPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CEPlayer.h; sourceTree = "<group>"; };
+		E2263E16157CFC9300558AD8 /* CEPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CEPlayer.m; sourceTree = "<group>"; };
 		E230F6BC156F9B1D00D2B84B /* RoundProgress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundProgress.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E230F6C0156F9B1D00D2B84B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E230F6C2156F9B1D00D2B84B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E230F6C4156F9B1D00D2B84B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		E230F6C8156F9B1D00D2B84B /* RoundProgress-Info.plist */ = {isa = PBXFileReference; path = "RoundProgress-Info.plist"; sourceTree = "<group>"; };
+		E230F6C8156F9B1D00D2B84B /* RoundProgress-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoundProgress-Info.plist"; sourceTree = "<group>"; };
 		E230F6CA156F9B1D00D2B84B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E230F6CC156F9B1D00D2B84B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E230F6CE156F9B1D00D2B84B /* RoundProgress-Prefix.pch */ = {isa = PBXFileReference; path = "RoundProgress-Prefix.pch"; sourceTree = "<group>"; };
-		E230F6CF156F9B1D00D2B84B /* CEAppDelegate.h */ = {isa = PBXFileReference; path = CEAppDelegate.h; sourceTree = "<group>"; };
+		E230F6CE156F9B1D00D2B84B /* RoundProgress-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoundProgress-Prefix.pch"; sourceTree = "<group>"; };
+		E230F6CF156F9B1D00D2B84B /* CEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEAppDelegate.h; sourceTree = "<group>"; };
 		E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEAppDelegate.m; sourceTree = "<group>"; };
-		E230F6D2156F9B1D00D2B84B /* CEViewController.h */ = {isa = PBXFileReference; path = CEViewController.h; sourceTree = "<group>"; };
+		E230F6D2156F9B1D00D2B84B /* CEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEViewController.h; sourceTree = "<group>"; };
 		E230F6D3156F9B1D00D2B84B /* CEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CEViewController.m; sourceTree = "<group>"; };
 		E230F6D6156F9B1D00D2B84B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEViewController.xib; sourceTree = "<group>"; };
+		E230F6DD156F9B4300D2B84B /* CERoundProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERoundProgressView.h; sourceTree = "<group>"; };
+		E230F6DE156F9B4300D2B84B /* CERoundProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERoundProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +61,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E2263E0B157CF7FA00558AD8 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				E2263E0C157CF7FA00558AD8 /* Pause.png */,
+				E2263E0D157CF7FA00558AD8 /* Pause@2x.png */,
+				E2263E0E157CF7FA00558AD8 /* Play.png */,
+				E2263E0F157CF7FA00558AD8 /* Play@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		E2263E18157D006300558AD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E230F6CF156F9B1D00D2B84B /* CEAppDelegate.h */,
+				E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */,
+				E230F6D2156F9B1D00D2B84B /* CEViewController.h */,
+				E230F6D3156F9B1D00D2B84B /* CEViewController.m */,
+				E230F6D5156F9B1D00D2B84B /* CEViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E2263E19157D006A00558AD8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2263E15157CFC9300558AD8 /* CEPlayer.h */,
+				E2263E16157CFC9300558AD8 /* CEPlayer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E2263E1A157D007100558AD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E230F6DD156F9B4300D2B84B /* CERoundProgressView.h */,
+				E230F6DE156F9B4300D2B84B /* CERoundProgressView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E230F6B1156F9B1C00D2B84B = {
 			isa = PBXGroup;
 			children = (
@@ -77,11 +132,10 @@
 		E230F6C6156F9B1D00D2B84B /* RoundProgress */ = {
 			isa = PBXGroup;
 			children = (
-				E230F6CF156F9B1D00D2B84B /* CEAppDelegate.h */,
-				E230F6D0156F9B1D00D2B84B /* CEAppDelegate.m */,
-				E230F6D2156F9B1D00D2B84B /* CEViewController.h */,
-				E230F6D3156F9B1D00D2B84B /* CEViewController.m */,
-				E230F6D5156F9B1D00D2B84B /* CEViewController.xib */,
+				E2263E1A157D007100558AD8 /* View */,
+				E2263E18157D006300558AD8 /* Controller */,
+				E2263E19157D006A00558AD8 /* Model */,
+				E2263E0B157CF7FA00558AD8 /* images */,
 				E230F6C7156F9B1D00D2B84B /* Supporting Files */,
 			);
 			path = RoundProgress;
@@ -152,6 +206,10 @@
 			files = (
 				E230F6CB156F9B1D00D2B84B /* InfoPlist.strings in Resources */,
 				E230F6D7156F9B1D00D2B84B /* CEViewController.xib in Resources */,
+				E2263E10157CF7FA00558AD8 /* Pause.png in Resources */,
+				E2263E11157CF7FA00558AD8 /* Pause@2x.png in Resources */,
+				E2263E12157CF7FA00558AD8 /* Play.png in Resources */,
+				E2263E13157CF7FA00558AD8 /* Play@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +223,8 @@
 				E230F6CD156F9B1D00D2B84B /* main.m in Sources */,
 				E230F6D1156F9B1D00D2B84B /* CEAppDelegate.m in Sources */,
 				E230F6D4156F9B1D00D2B84B /* CEViewController.m in Sources */,
+				E230F6DF156F9B4300D2B84B /* CERoundProgressView.m in Sources */,
+				E2263E17157CFC9300558AD8 /* CEPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +334,7 @@
 				E230F6DC156F9B1D00D2B84B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
