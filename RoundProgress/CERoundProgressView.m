@@ -7,6 +7,7 @@
 //
 
 #import "CERoundProgressView.h"
+#import "CERoundProgressLayer.h"
 
 @interface CERoundProgressView ()
 
@@ -16,6 +17,10 @@
 
 @implementation CERoundProgressView
 
++ (Class) layerClass
+{
+    return [CERoundProgressLayer class];
+}
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -44,25 +49,87 @@
 }
 
 
-@synthesize progress;
-- (void) setProgress:(float)newProgress
+- (float) progress
 {
-    if(newProgress < 0.0f)
-        progress = 0.0f;
-    else if(newProgress > 1.0f)
-        progress = 1.0f;
-    else
-        progress = newProgress;
-    
-    [self setNeedsDisplay];
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    return layer.progress;
 }
 
-@synthesize tintColor;
-@synthesize trackColor;
+- (void) setProgress:(float)progress
+{
+    BOOL growing = progress > self.progress;
+    [self setProgress:progress animated:growing];
+}
 
-@synthesize startAngle;
+- (void) setProgress:(float)progress animated:(BOOL)animated
+{
+    
+    
+    // Coerce the value
+    if(progress < 0.0f)
+        progress = 0.0f;
+    else if(progress > 1.0f)
+        progress = 1.0f;
+    
+    // Apply to the layer
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    if(animated)
+    {
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"progress"];
+        animation.duration = 0.25;
+        animation.fromValue = [NSNumber numberWithFloat:layer.progress];
+        animation.toValue = [NSNumber numberWithFloat:progress];
+        [layer addAnimation:animation forKey:@"progressAnimation"];
+        
+        layer.progress = progress;
+    }
+    
+    else {
+        layer.progress = progress;
+        [layer setNeedsDisplay];
+    }
+}
 
-- (void)drawRect:(CGRect)rect
+- (UIColor *)tintColor
+{
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    return layer.tintColor;
+}
+- (void) setTintColor:(UIColor *)tintColor
+{
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    layer.tintColor = tintColor;
+    [layer setNeedsDisplay];
+}
+
+- (UIColor *)trackColor
+{
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    return layer.trackColor;
+}
+
+- (void) setTrackColor:(UIColor *)trackColor
+{
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    layer.trackColor = trackColor;
+    [layer setNeedsDisplay];
+}
+
+
+- (float) startAngle
+{
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    return layer.startAngle;
+}
+
+- (void) setStartAngle:(float)startAngle
+{
+    CERoundProgressLayer *layer = (CERoundProgressLayer *)self.layer;
+    layer.startAngle = startAngle;
+    [layer setNeedsDisplay];
+}
+
+/*- (void)drawRect:(CGRect)rect
 {
     CGFloat radius = MIN(self.bounds.size.width, self.bounds.size.height)/2.0;
     CGPoint center = {self.bounds.size.width/2.0, self.bounds.size.height/2.0};
@@ -88,7 +155,7 @@
     
     [tintColor setFill];
     [pieShare fill];                                   
-}
+}*/
 
 
 @end

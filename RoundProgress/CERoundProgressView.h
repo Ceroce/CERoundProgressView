@@ -11,6 +11,7 @@
 @interface CERoundProgressView : UIView
 
 @property (nonatomic, assign) float progress;   // 0 .. 1
+- (void) setProgress:(float)progress animated:(BOOL)animated;
 
 @property (nonatomic, assign) float startAngle; // 0..2π 
 @property (nonatomic, retain) UIColor *tintColor;

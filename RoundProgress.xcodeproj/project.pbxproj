@@ -21,6 +21,8 @@
 		E230F6D4156F9B1D00D2B84B /* CEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6D3156F9B1D00D2B84B /* CEViewController.m */; };
 		E230F6D7156F9B1D00D2B84B /* CEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E230F6D5156F9B1D00D2B84B /* CEViewController.xib */; };
 		E230F6DF156F9B4300D2B84B /* CERoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = E230F6DE156F9B4300D2B84B /* CERoundProgressView.m */; };
+		E2AEED331588A30900733008 /* CERoundProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2AEED321588A30900733008 /* CERoundProgressLayer.m */; };
+		E2AEED361588A35000733008 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2AEED351588A35000733008 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,9 @@
 		E230F6D6156F9B1D00D2B84B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CEViewController.xib; sourceTree = "<group>"; };
 		E230F6DD156F9B4300D2B84B /* CERoundProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERoundProgressView.h; sourceTree = "<group>"; };
 		E230F6DE156F9B4300D2B84B /* CERoundProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERoundProgressView.m; sourceTree = "<group>"; };
+		E2AEED311588A30900733008 /* CERoundProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERoundProgressLayer.h; sourceTree = "<group>"; };
+		E2AEED321588A30900733008 /* CERoundProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERoundProgressLayer.m; sourceTree = "<group>"; };
+		E2AEED351588A35000733008 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2AEED361588A35000733008 /* QuartzCore.framework in Frameworks */,
 				E230F6C1156F9B1D00D2B84B /* UIKit.framework in Frameworks */,
 				E230F6C3156F9B1D00D2B84B /* Foundation.framework in Frameworks */,
 				E230F6C5156F9B1D00D2B84B /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +104,8 @@
 			children = (
 				E230F6DD156F9B4300D2B84B /* CERoundProgressView.h */,
 				E230F6DE156F9B4300D2B84B /* CERoundProgressView.m */,
+				E2AEED311588A30900733008 /* CERoundProgressLayer.h */,
+				E2AEED321588A30900733008 /* CERoundProgressLayer.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 		E230F6BF156F9B1D00D2B84B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2AEED351588A35000733008 /* QuartzCore.framework */,
 				E230F6C0156F9B1D00D2B84B /* UIKit.framework */,
 				E230F6C2156F9B1D00D2B84B /* Foundation.framework */,
 				E230F6C4156F9B1D00D2B84B /* CoreGraphics.framework */,
@@ -225,6 +234,7 @@
 				E230F6D4156F9B1D00D2B84B /* CEViewController.m in Sources */,
 				E230F6DF156F9B4300D2B84B /* CERoundProgressView.m in Sources */,
 				E2263E17157CFC9300558AD8 /* CEPlayer.m in Sources */,
+				E2AEED331588A30900733008 /* CERoundProgressLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
