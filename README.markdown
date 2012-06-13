@@ -4,11 +4,11 @@ CERoundProgressView shows a progress as a pie share diagram. While it does not i
 
 The view is graphically very simple, consisting of only a background circle and a coloured arc:
 
-![A CERoundProgressView on its own](https://github.com/Ceroce/CERoundProgressView/blob/master/doc/ProgressViewAlone.png)
+![A CERoundProgressView on its own](http://www.ceroce.com/github/CEProgressView/ProgressViewAlone.png)
 
 However, used in conjunction with other elements, it becomes quite interesting. For example, the sample program uses it as the background of a button which uses an image, transparent in some parts:
 
-![A CERoundProgressView used with a button](https://github.com/Ceroce/CERoundProgressView/blob/master/doc/ProgressViewWithButton.png)
+![A CERoundProgressView used with a button](http://www.ceroce.com/github/CEProgressView/ProgressViewWithButton.png)
 
 
 ### Particular Features ###
