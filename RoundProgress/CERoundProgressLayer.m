@@ -35,6 +35,14 @@
     return self;
 }
 
+- (void)dealloc
+{
+    self.tintColor = nil;
+    self.trackColor = nil;
+    
+    [super dealloc];
+}
+
 + (BOOL) needsDisplayForKey:(NSString *)key
 {
     if([key isEqualToString:@"progress"])

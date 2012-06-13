@@ -129,33 +129,5 @@
     [layer setNeedsDisplay];
 }
 
-/*- (void)drawRect:(CGRect)rect
-{
-    CGFloat radius = MIN(self.bounds.size.width, self.bounds.size.height)/2.0;
-    CGPoint center = {self.bounds.size.width/2.0, self.bounds.size.height/2.0};
-    
-    // Background circle
-    UIBezierPath *backgroundCircle = [UIBezierPath bezierPathWithArcCenter:center
-                                                                    radius:radius
-                                                                startAngle:0.0
-                                                                  endAngle:2.0*M_PI
-                                                                 clockwise:YES];
-    
-    [trackColor setFill];
-    [backgroundCircle fill];
-    
-    // Elapsed arc
-    UIBezierPath *pieShare = [UIBezierPath bezierPathWithArcCenter:center 
-                                                            radius:radius 
-                                                        startAngle:startAngle
-                                                          endAngle:startAngle + progress*2.0*M_PI
-                                                         clockwise:YES];
-    [pieShare addLineToPoint:center];
-    [pieShare closePath];
-    
-    [tintColor setFill];
-    [pieShare fill];                                   
-}*/
-
 
 @end
