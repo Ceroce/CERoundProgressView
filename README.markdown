@@ -43,7 +43,7 @@ CERoundProgressView makes use of the UIAppearance API which is only available fr
 
 The sample program shows a button which toggles between Play and Pause. The CERoundProgressView is below it.
 
-* CEPlayer is the most interesting class. It makes its position evolve from 0 to 1 every on a duration of 20 seconds. The position changes abruptly every 0.5 s, on purpose: you can notice that the slider jumps from value to value, while the progress view animates smoothly.
+* CEPlayer is the most interesting class. It makes its position evolve from 0 to 1 on a duration of 20 seconds. The position changes abruptly every 0.5 s, on purpose: you can notice that the slider jumps from value to value, while the progress view animates smoothly.
 
 * CEViewController is the delegate of CEPlayer. Its  purpose is to catch the actions of the button and set the progress of the slider and the progress view.
 
