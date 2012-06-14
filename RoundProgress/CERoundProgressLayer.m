@@ -54,10 +54,10 @@
 - (void) drawInContext:(CGContextRef)context
 {
     CGFloat radius = MIN(self.bounds.size.width, self.bounds.size.height)/2.0;
-    CGPoint center = {self.bounds.size.width/2.0, self.bounds.size.height/2.0};
+    CGPoint center = CGPointMake(self.bounds.size.width/2.0, self.bounds.size.height/2.0);
     
     // Background circle
-    CGRect circleRect = {center.x-radius, center.y-radius, radius*2.0, radius*2.0};
+    CGRect circleRect = CGRectMake(center.x-radius, center.y-radius, radius*2.0, radius*2.0);
     CGContextAddEllipseInRect(context, circleRect);
     
     CGContextSetFillColorWithColor(context, trackColor.CGColor);
