@@ -28,7 +28,7 @@ Because the progress view uses Core Animation, your target must also link with t
 
 ## Compatibility ##
 
-CERoundProgressView is compatible with iOS 5.0 (not tested on betas of iOS 6 yet).
+CERoundProgressView is compatible with iOS 5 and iOS 6.
 
 #### Automatic Reference Counting ####
 ARC is not enabled in the sample project, and the classes manage memory the old way.

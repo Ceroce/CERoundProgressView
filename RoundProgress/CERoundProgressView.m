@@ -46,6 +46,9 @@
     self.opaque = NO;
     self.tintColor = [UIColor colorWithRed:0.2 green:0.45 blue:0.8 alpha:1.0];
     self.trackColor = [UIColor whiteColor];
+    
+    // On Retina displays, the layer must have its resolution doubled so it does not look blocky.
+    self.layer.contentsScale = [UIScreen mainScreen].scale;
 }
 
 

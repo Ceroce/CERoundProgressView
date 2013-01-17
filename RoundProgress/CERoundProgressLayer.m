@@ -25,6 +25,8 @@
         if([layer isKindOfClass:[CERoundProgressLayer class]])
         {
             CERoundProgressLayer *otherLayer = layer;
+            
+            
             self.progress = otherLayer.progress;
             self.startAngle = otherLayer.startAngle;
             self.tintColor = otherLayer.tintColor;
