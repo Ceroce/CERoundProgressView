@@ -9,6 +9,8 @@
 #import "CERoundProgressView.h"
 #import "CERoundProgressLayer.h"
 
+const NSTimeInterval CERoundProgressLayerDefaultAnimationDuration = 0.25;
+
 @interface CERoundProgressView ()
 
 - (void) _initIVars;
@@ -44,6 +46,7 @@
 
 - (void) _initIVars
 {
+    _animationDuration = CERoundProgressLayerDefaultAnimationDuration;
     self.backgroundColor = [UIColor clearColor];
     self.opaque = NO;
     self.tintColor = [UIColor colorWithRed:0.2 green:0.45 blue:0.8 alpha:1.0];
@@ -68,8 +71,6 @@
 
 - (void) setProgress:(float)progress animated:(BOOL)animated
 {
-    
-    
     // Coerce the value
     if(progress < 0.0f)
         progress = 0.0f;
@@ -92,23 +93,6 @@
     else {
         layer.progress = progress;
         [layer setNeedsDisplay];
-    }
-}
-
-#define DEFAULT_ANIMATION_DURATION 0.25
-
-- (float)animationDuration
-{
-    if (!_animationDuration) {
-        _animationDuration = DEFAULT_ANIMATION_DURATION;
-    }
-    return _animationDuration;
-}
-
-- (void)setAnimationDuration:(float)animationDuration
-{
-    if (animationDuration > 0) {
-        _animationDuration = animationDuration;
     }
 }
 

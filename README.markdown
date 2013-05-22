@@ -25,6 +25,14 @@ Drag the following files to your Xcode project:
 
 Because the progress view uses Core Animation, your target must also link with the QuartzCore framework.
 
+### Duration of the animation ###
+I could not find a way to add a custom animatable property to a UIView. As a result, the following sample code has no effect on the animation's duration:
+
+	[UIView animateWithDuration:3.0 animations:^{
+		self.roundProgressView.progress = 12.0;
+	}];
+
+Therefore, CERoundProgressView an animationDuration property was added for that purpose.
 
 ## Compatibility ##
 
@@ -33,7 +41,7 @@ CERoundProgressView is compatible with iOS 5 and iOS 6.
 #### Automatic Reference Counting ####
 ARC is not enabled in the sample project, and the classes manage memory the old way.
 
-If ARC is activated in your project, the compiler will complain about the -dealloc method of CERoundProgressLayer. You may remove this method.
+If ARC is activated in your project, the compiler will complain about the -dealloc method in CERoundProgressLayer.m. You should disable ARC for this file using the -fno-objc-arc compiler flag.
 
 #### Older SDKs ####
 
