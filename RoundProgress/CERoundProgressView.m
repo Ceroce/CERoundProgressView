@@ -17,6 +17,8 @@
 
 @implementation CERoundProgressView
 
+@synthesize animationDuration = _animationDuration;
+
 + (Class) layerClass
 {
     return [CERoundProgressLayer class];
@@ -79,7 +81,7 @@
     if(animated)
     {
         CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"progress"];
-        animation.duration = 0.25;
+        animation.duration = self.animationDuration;
         animation.fromValue = [NSNumber numberWithFloat:layer.progress];
         animation.toValue = [NSNumber numberWithFloat:progress];
         [layer addAnimation:animation forKey:@"progressAnimation"];
@@ -90,6 +92,23 @@
     else {
         layer.progress = progress;
         [layer setNeedsDisplay];
+    }
+}
+
+#define DEFAULT_ANIMATION_DURATION 0.25
+
+- (float)animationDuration
+{
+    if (!_animationDuration) {
+        _animationDuration = DEFAULT_ANIMATION_DURATION;
+    }
+    return _animationDuration;
+}
+
+- (void)setAnimationDuration:(float)animationDuration
+{
+    if (animationDuration > 0) {
+        _animationDuration = animationDuration;
     }
 }
 

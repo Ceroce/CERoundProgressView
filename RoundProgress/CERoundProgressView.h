@@ -16,5 +16,6 @@
 @property (nonatomic, assign) float startAngle; // 0..2π 
 @property (nonatomic, retain) UIColor *tintColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic, retain) UIColor *trackColor UI_APPEARANCE_SELECTOR;
+@property (nonatomic, assign) float animationDuration; // greater than 0 (in seconds); default value: 0.25
 
 @end
